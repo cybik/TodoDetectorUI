@@ -3,19 +3,19 @@ package com.androidmontreal.tododetector.network;
 import org.apache.http.HttpResponse;
 
 import com.androidmontreal.tododetector.network.interfaces.IAnsweringMachine;
-import com.androidmontreal.tododetector.network.interfaces.IVideotronNetworkResponse;
+import com.androidmontreal.tododetector.network.interfaces.INetworkResponse;
 
-public class VideotronMessageMachine implements IAnsweringMachine {
+public class MessageMachine implements IAnsweringMachine {
 
-	private IVideotronNetworkResponse callbackActivity;
+	private INetworkResponse callbackActivity;
 	private HttpResponse response;
  
-	public VideotronMessageMachine(IVideotronNetworkResponse callbackActivity) {
+	public MessageMachine(INetworkResponse callbackActivity) {
 		this.callbackActivity = callbackActivity;
 	}
  
 	public void run() {
-		callbackActivity.onVideotronNetworkResponseReceived(response);
+		callbackActivity.onNetworkResponseReceived(response);
 	}
  
 	public void setResponse(HttpResponse response) {
