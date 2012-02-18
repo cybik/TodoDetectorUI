@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Todo List</string>
+    
+    <!-- Preferences -->
+    <string name="strIdPrefs">app_settings</string>
+    <string name="strIdPrefsSubTitle">Internal Settings</string>
+    
+    <string name="prefCatServer">Server Settings</string>
+    <string name="prefServerBaseURL">Server base URL</string>
+    <string name="strServerBaseURL">NONE</string>
+    
+    <string name="prefRandom">Other things</string>
+    <string name="prefAbout">About this program</string>
+    <string name="strAbout">ABOUTthisProgram</string>
+
+</resources>
